@@ -1,0 +1,126 @@
+<html>
+    <title> KONTAK</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <head>
+        <style>
+                @import url('https://fonts.googleapis.com/css2?family=Caveat:wght@700&family=Didact+Gothic&family=Noto+Color+Emoji&family=Oswald:wght@500&family=Oxygen:wght@700&family=Playpen+Sans&family=Righteous&display=swap');
+    
+                body,html {
+                    margin: 0;
+                    font: bold 16pt/1.4 'open sans',arial,sans-serif;
+                    color: #101010;
+                    background-color: #EEEDDE;
+                }
+                p{
+                    text-align:justify;
+                    margin-left: 70px;
+                    font-family: 'Didact Gothic', sans-serif;
+                    font-size: xx-large;
+                    margin-right: 10%;
+                }
+                ul{
+                    margin: 0 0 0;
+                    padding: 0;
+                    list-style: none;
+                    display: table;
+                    width: 100%;
+                    text-align: center;
+                    backdrop-filter: blur(100px);
+                    background: #101010;
+                }
+                li{
+                    display: table-cell;
+                    position: relative;
+                    padding: 15px 0;
+                    
+                }
+                a{
+                    color: #EEEDDE;
+                    text-transform: uppercase;
+                    text-decoration: none;
+                    letter-spacing: 0.15em;
+                    display: inline-block;
+                    padding: 15px 20px;
+                    position: relative;
+                }
+                
+                #tag{
+                    color: #EEEDDE;
+                    border-radius: 10px;
+                    padding: 10px 30px;
+                    font-family: 'Oxygen', sans-serif;
+                    font-size: 16pt;
+                    background: transparent;
+                    cursor: pointer;
+                    transition: all 0.3s ease;
+                    position: relative;
+                    display: inline-block;
+                    filter: drop-shadow(10px 10px 15px #00fffc);
+                    outline: none;
+                    background: #000;
+                    border: none;
+                    transition: all 0.3s ease;
+                    overflow: hidden;
+                    margin-left: 3em;
+                }
+                #tag:after{
+                    position: absolute;
+                    content: " ";
+                    top: 0;
+                    left: 0;
+                    z-index: -1;
+                    width: 100%;
+                    height: 100%;
+                    transition: all 0.3s ease;
+                    /* -webkit-transform: scale(.1);
+                    transform: scale(.1); */
+                    background-color: #101010;
+                }
+                #tag:hover{
+                    color: #101010;
+                    border: none;
+                    background: #00fffc;
+                    filter: drop-shadow(10px 10px 15px #101010);
+                    transition:ease 1.3s,left 2s;
+                }
+                #tag:hover:after{
+                    background: transparent;
+                }
+                a:after{
+                    background: none repeat scroll 0 0 transparent;
+                    bottom: 0;
+                    content: "";
+                    display: block;
+                    height: 5px;
+                    left: 50%;
+                    position: absolute;
+                    background: #fff;
+                    transition: width 0.3s ease 0s, left 0.3s ease 0s;
+                    width: 0;
+                }
+                a:hover:after {
+                    width: 100%;
+                    left: 0;
+                    background-color: #00fffc;
+                }
+                @media screen and (max-height:300px) {
+                    ul {
+                        margin-top: 40px;
+                    }
+                }
+              </style>
+             <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="profil.html">Profil</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="#">Kontak</a></li>
+                <li><a href="galery.html">Gallery</a></li>
+                <li><a href="latihan.html">Latihan</a></li>
+            </ul>
+        </head>
+    <body>
+        <p>            
+        kontak Us! <hr><br><a href="mailto:zidanmazmii@gmail.com" id="tag"><i class="fa fa-envelope" style="font-size:25px"></i> Email</a> 
+        <a href="https://www.instagram.com/zidanmazmi_/" id="tag"><i class="fa fa-instagram" style="font-size:25px"></i> zidanmazmi_</a>
+    </body>
+</html>

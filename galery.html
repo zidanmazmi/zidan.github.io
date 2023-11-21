@@ -1,0 +1,107 @@
+<html>
+    <title>Galery</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/react/16.14.0/umd/react.production.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/react-dom/16.14.0/umd/react-dom.production.min.js"></script>
+    <head>
+        <style>
+                @import url('https://fonts.googleapis.com/css2?family=Caveat:wght@700&family=Didact+Gothic&family=Noto+Color+Emoji&family=Oswald:wght@500&family=Oxygen:wght@700&family=Playpen+Sans&family=Righteous&display=swap');
+    
+                body,html {
+                    margin: 0;
+                    font: bold 16pt/1.4 'open sans',arial,sans-serif;
+                    color: #101010;
+                    background-color: #EEEDDE;
+                }
+                p{
+                    text-align:justify;
+                    margin-left: 70px;
+                    font-family: 'Didact Gothic', sans-serif;
+                    font-size: xx-large;
+                    margin-right: 10%;
+                }
+                ul{
+                    margin: 0 0 0;
+                    padding: 0;
+                    list-style: none;
+                    display: table;
+                    width: 100%;
+                    text-align: center;
+                    backdrop-filter: blur(100px);
+                    background: #101010;
+                }
+                li{
+                    display: table-cell;
+                    position: relative;
+                    padding: 15px 0;
+                    
+                }
+                a{
+                    color: #fff;
+                    text-transform: uppercase;
+                    text-decoration: none;
+                    letter-spacing: 0.15em;
+                    display: inline-block;
+                    padding: 15px 20px;
+                    position: relative;
+                }
+                hr {
+                    content: none;
+                }
+                #tag{
+                    color: #101010;
+                    border-radius: 40px 40px 10px 10px;
+                    font-size: 19pt;
+                    font-family: 'Oxygen', sans-serif;
+                    margin-left: 10%;
+                    margin-top: 20px;
+                }
+                #tag:hover{
+                    color: #e3e3e3;
+                    background-color: #101010;
+                }
+                #tag:hover:after{
+                    background: #00fffc;
+                    height: 20%;
+                    border-radius: 10px 10px 15px 15px;
+                    
+                }
+                a:after{
+                    background: none repeat scroll 0 0 transparent;
+                    bottom: 0;
+                    content: "";
+                    display: block;
+                    height: 5px;
+                    left: 50%;
+                    position: absolute;
+                    background: #fff;
+                    transition: width 0.3s ease 0s, left 0.3s ease 0s;
+                    width: 0;
+                }
+                a:hover:after {
+                    width: 100%;
+                    left: 0;
+                    background-color: #00fffc;
+                }
+                @media screen and (max-height:300px) {
+                    ul {
+                        margin-top: 40px;
+                    }
+                }
+              </style>
+             <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="profil.html">Profil</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="kontak.html">Kontak</a></li>
+                <li><a href="#">Gallery</a></li>
+                <li><a href="latihan.html">Latihan</a></li>
+            </ul>
+        </head>
+    <body>
+      <script type="module" src="https://unpkg.com/@splinetool/viewer@0.9.507/build/spline-viewer.js"></script>
+      <spline-viewer loading-anim-type="spinner-small-dark" url="https://prod.spline.design/Tr3p8RCX5W2tAaYw/scene.splinecode"></spline-viewer>
+    </body>
+</html>
