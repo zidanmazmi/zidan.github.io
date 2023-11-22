@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JavaScript Program</title>
+</head>
+<body>
+    <script>
+        var userInput = prompt("Masukan Nama anda:", "");
+        alert("Hai, " + userInput + "!");
+
+        var isConfirmed = confirm("Apakah kamu ingin lanjut?");
+        if (isConfirmed) {
+            alert("Kamu pilih Ok!");
+        } else {
+            alert("Kamu pilih Cancel!");
+        }
+
+        function submitForm() {
+            var formInput = document.getElementById("userInput").elements["formInput"].value;
+            var hasilTextarea = document.getElementById("hasil");
+            hasilTextarea.value += userInput + " said: " + formInput + '\n';
+            alert(userInput + " said: " + formInput);
+        }
+    </script>
+    <form id="userInput">
+        <label for="formInput">Berikan Saya Kata kata : </label>
+        <input type="text" id="formInput" name="formInput"><br>
+        <input type="button" value="Submit" onclick="submitForm()">
+    </form>
+    <form>
+        <textarea name="hasil" id="hasil" cols="30" rows="10" edit="false"></textarea>
+    </form>
+</body>
+</html>
