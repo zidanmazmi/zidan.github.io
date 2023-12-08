@@ -1,0 +1,20 @@
+<html>
+    <body onload="window.defaultStatus='Selamat belajar javascript'">
+        <script>
+            function konversi(f){
+                var c;
+                c =5/9 * (f-32);
+                return c;
+            }
+            var f = new Array(212,32,-459.15);
+            var c = new Array();
+            var counter;
+            for (counter = 0; counter<=2; counter++){
+                c[counter] = konversi(f[counter]);
+            } for(counter=2;counter>=0;counter--){
+                document.write("Value "+counter+" was "+f[counter]+" derajat fahrenheit");
+                document.write(" which is "+ c[counter]+" derajat celcius<br>");
+            }
+        </script>
+    </body>
+</html>
