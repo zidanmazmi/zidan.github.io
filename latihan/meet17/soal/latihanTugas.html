@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bilangan yang habis dibagi 3 || TUGAS bagian C.</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #1e242a;
+            margin: 20px;
+        }
+
+        h1 {
+            text-align: center;
+            color: #e3e3e3;
+        }
+
+        p {
+            margin: 10px 0;
+            color: #333;
+        }
+
+        .result {
+            background-color: #e3e3e3;
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+    </style>
+</head>
+<body>
+    <h1>Bilangan yang habis dibagi 3</h1>
+    <div class="result">
+        <script type="text/javascript">
+            var na = parseInt(prompt("Masukkan nilai awal deret:"));
+            var nk = parseInt(prompt("Masukkan nilai akhir deret:"));
+
+            var deret = "";
+            var jb = 0;
+            var jn = 0;
+
+            for (var i = na; i <= nk; i++) {
+                if (i % 3 === 0) {
+                    deret += i + ", ";
+                    jb++;
+                    jn += i;
+                }
+            }
+
+            // Tampilan
+            document.write("<p><strong>Nilai Awal:</strong> " + na + "</p>");
+            document.write("<p><strong>Nilai Akhir:</strong> " + nk + "</p>");
+            document.write("<p><strong>Deret yang tampil:</strong> " + deret + "</p>");
+            document.write("<p><strong>Jumlah deret bilangan:</strong> " + jb + " bilangan</p>");
+            document.write("<p><strong>Jumlah nilai bilangan tersebut:</strong> " + jn + "</p>");
+        </script>
+    </div>
+</body>
+</html>

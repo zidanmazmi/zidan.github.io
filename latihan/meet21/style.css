@@ -1,0 +1,64 @@
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Caveat:wght@700&family=Didact+Gothic&family=Fjalla+One&family=Noto+Color+Emoji&family=Oswald:wght@500&family=Oxygen:wght@700&family=Playpen+Sans&family=Righteous&display=swap');
+.logo {
+    font-family: 'Fjalla One', sans-serif;
+    font-size: larger;
+    backdrop-filter: blur(16px) saturate(180%);
+    -webkit-backdrop-filter: blur(16px) saturate(180%);
+    
+}
+.banner {
+    background: url("assets/AMOLED\ Abstract\ Wallpaper.jpg");
+    background-size: cover;
+    padding-top: 20%;
+    padding-bottom: 20%;
+    color: #fff;
+  }
+  
+  .layanan {
+    background:black ;
+    background-size: cover;
+    padding-top: 0;
+    color: #e3e3e3;
+  }
+  .lingkaran {
+    display: inline-block;
+    border-radius: 50%;
+    width: 150px;
+    margin: auto;
+    height: 150px;
+    color: #fff;
+    background-color: #3e3e3e;
+  }
+  
+  .lingkaran i {
+    position: relative;
+    top: 30px;
+  }
+  
+  .slide {
+   width: 70%;
+   height: 70%;
+   margin-left: 15%;
+   color: #e3e3e3;
+   padding-top: 20%;
+   padding-bottom: 20%;
+  }
+
+  .galeri{
+    background-color: black;
+    padding-top: 10%;
+    padding-bottom: 10%;
+  }
+  .contact {
+    background: url("assets/moon.jpg");
+    color: #e3e3e3;
+    animation: bg 3s infinite;
+    padding-top: 20%;
+    padding-bottom: 20%;
+    
+  }
+@keyframes bg {
+    100% {
+        filter: hue-rotate(360deg);
+    }
+  }

@@ -1,0 +1,29 @@
+<html>
+    <body>
+        <script language="javascript" type="text/javascript">
+            var scrtNum = prompt("pick a number between 1 and 5:","");
+            scrtNum = parseInt(scrtNum);
+            switch (scrtNum) {
+                case 1:
+                    document.write("Too Low! 1");
+                    break;
+                case 2:
+                    document.write("Too Low! 2");
+                    break;
+                case 3:
+                    document.write("You guessed the secret number!");
+                    break;
+                case 4:
+                    document.write("Too High! 4");
+                    break;
+                case 5:
+                    document.write("Too High! 5");
+                    break;
+                default:
+                    document.write("you did not enter a number between 1 and 5.");
+                    break;
+            }
+            document.write("<br> Execution continues here");
+        </script>
+    </body>
+</html>
