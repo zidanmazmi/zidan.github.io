@@ -1,0 +1,43 @@
+@import url('https://fonts.googleapis.com/css2?family=Caveat:wght@700&family=Noto+Color+Emoji&family=Playpen+Sans&family=Righteous&display=swap');
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    
+}
+
+.side {
+    height: 100%;
+    width: 200px;
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    left: 0;
+    background-color: #111;
+    overflow: hidden;
+    font-family: 'Playpen Sans', cursive;
+}
+
+.side a{
+    color: aliceblue;
+    padding: 16px;
+    text-decoration: none;
+    display: block;
+}
+
+.side a:hover {
+    background-color: aqua;
+    color: #000;
+}
+
+.isi {
+    margin-left: 200px;
+    padding-left: 20px;
+}
+h2{
+    font-family: 'Oswald', sans-serif;
+    font-size: 35px;
+    letter-spacing: 4px;   
+}

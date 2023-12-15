@@ -1,0 +1,27 @@
+<html>
+    <head>
+        <title>Latihan dengan objek radio</title>
+    </head>
+    <body>
+        <script language="JavaScript">
+            function radio_box(form) {
+                var ket="";
+                for(i=0;i<document.myform.jenis.length;i++) {
+                    if(document.myform.jenis[i].checked==true) {
+                        ket=document.myform.jenis[i].value;
+                    }
+                } 
+                alert('anda adalah seorang'+ket);
+            }
+        </script>
+        <form name="myform">
+            <h1>Memasukan data dengan objek radio</h1> <hr>
+            <p><input type="radio" name="jenis" value="wanita">wanita
+            <input type="radio" name="jenis" value="Pria">Pria</p> <hr>
+            <p>
+                <input type="button" value="CONFIRM" onclick="radio_box(this.form)">
+                <input type="reset" value="RESET">
+            </p>
+        </form>
+    </body>
+</html>

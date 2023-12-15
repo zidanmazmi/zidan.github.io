@@ -1,0 +1,31 @@
+<html>
+    <head>
+        <title>Latihan dengan objek checkbox</title>
+    </head>
+    <body>
+        <script language="javascript">
+            function check_box(form) {
+                var ket="";
+                var ket1="";
+                if (form.bola.checked=true)
+                {
+                    ket="nonton bola";
+                }
+                if(form.tv.checked == true) {
+                    ket1="nonton tv";
+                }
+                alert('Hobby anda '+ket+ket1);
+            }
+        </script>
+        <form>
+            <h1>Masukan data dengan objek checkbox</h1><hr>
+            <p>Hobby anda : </p>
+            <input type="checkbox" name="bola" value="ON">
+            <input type="checkbox" name="tv" value="ON"> <hr>
+            <p>
+                <input type="button" value="CONFIRM" onclick="check_box(this.form)">
+                <input type="reset" value="RESET">
+            </p>
+        </form>
+    </body>
+</html>
